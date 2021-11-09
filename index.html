@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=”https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap” rel=”stylesheet”>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-family:‘Noto Sans KR’, sans-serif;
+        }
+    </style>
+    <script data-ad-client="ca-pub-7671723771768457" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav inner_middle nav inner_middle justify-content-center bg-lightt">
+            <h1 class="main_logo"><a href="javascript:void(0);" onclick="window.location.reload();"><img src="images/logo.png" style="width: 100px; height: 100px;"></a></h1>
+            <ul class="menu_list">
+                <li class="main_menu club_tab" >
+                    <a href="javascript:void(0);" onclick="promotion();">동아리홍보</a>
+                </li>
+                <li class="main_menu info_tab">
+                    <a href="javascript:void(0);" onclick="info();">체육정보</a>
+                </li>
+                <li class="main_menu notice_tab">
+                    <a href="javascript:void(0);" onclick="notice();">공지사항</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <article class="main_page">
+        <h1>메인페이지</h1>
+        <div class="main_club_list">
+            <h2 class="title"><p>동아리 홍보</p></h1>
+            <div><p>대한장애인체육회의 장애인 생활체육 동호회 정보를 제공하는 데이터입니다.</p></div>
+            <div id="club_list">
+                <dl>
+                    <dt>
+
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </article>
+    <article class="notice">
+        <div class="notice_img_box"><img src="./images/friend.png" style="top: 150px;"></div>
+    </article>
+    <!-- <article class="question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="flower"><img src="images/flower.png" style="width: 1.5em; height: 1.5em;"></span><span id="question_num">1/12</span>
+        <h2 id="title" class="text-center mt-5">문제</h2>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn mt-5 option">Primary</button>
+        <button id="B" type="button" class="btn mt-5 option">Primary</button>
+    </article> -->
+    <!-- <article class="result"> 
+        <a class="music-url" href="http://kko.to/b0bTPsTfp">
+            <div class="result-image">
+                <div class="img-cover"></div>
+            </div>
+        </a>
+        <span id="output">MBTI</span>
+        <span id="explain">설명</span> -->
+        
+        <!-- <div class="image" src="https://cdnimg.melon.co.kr/cm/album/images/026/46/282/2646282_500.jpg/melon/resize/282/quality/80/optimize"></div></a> -->
+        <!-- <ul class="list">
+
+        </ul>
+        <button type="button" class="btn col-3 mt-3" onclick="window.location.reload()" style="border-color: #cb99c5; margin: 0 auto;">다시하기</button> -->
+        <!-- AddToAny BEGIN -->
+        <!-- <div class="a2a_kit a2a_kit_size_32 a2a_default_style margin_auto mt-3" data-a2a-url="https://iu-test.netlify.app/" data-a2a-title="iu-test">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_email"></a>
+            <a class="a2a_button_kakao"></a>
+            <a class="a2a_button_sms"></a>
+        </div>
+        <script async src="https://static.addtoany.com/menu/page.js"></script> -->
+        <!-- AddToAny END -->
+    <!-- </article> -->
+    <footer class="text-center text-lg-start abs_bt">
+        <div class="text-center p-3" style="background-color: transparent;">
+            © 2021 Copyright: @_iammihee (Feedback welcome)
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        
+        function notice() {
+            $(".main_page").hide();
+            $(".notice").show();
+        }
+        function start() {
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+        $("#A").click(function(){
+            next();
+        });
+        $("#B").click(function(){
+            var type = $("#type").val();
+            var preValue = $("#"+type).val();
+            $("#"+type).val(parseInt(preValue)+1);
+            next();
+        });
+        
+    </script>
+</body>
+</html>
