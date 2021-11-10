@@ -18,33 +18,75 @@
     <script data-ad-client="ca-pub-7671723771768457" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-    <div class="header">
-        <nav class="nav inner_middle nav inner_middle justify-content-center bg-lightt">
-            <h1 class="main_logo"><a href="javascript:void(0);" onclick="window.location.reload();"><img src="images/logo.png" style="width: 100px; height: 100px;"></a></h1>
+    <div class="header" style="position: relative;">
+        <nav class="nav inner_middle nav inner_middle bg-lightt">
             <ul class="menu_list">
                 <li class="main_menu club_tab" >
-                    <a href="javascript:void(0);" onclick="promotion();">동아리홍보</a>
+                    <a href="javascript:void(0);" onclick="promotion();">동호회홍보</a>
                 </li>
                 <li class="main_menu info_tab">
-                    <a href="javascript:void(0);" onclick="info();">체육정보</a>
+                    <a href="javascript:void(0);" onclick="info();">체육시설</a>
                 </li>
                 <li class="main_menu notice_tab">
                     <a href="javascript:void(0);" onclick="notice();">공지사항</a>
                 </li>
             </ul>
+            <div class="main_logo" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 35px; font-weight: bold;"><a href="javascript:void(0);" onclick="window.location.reload();" style="width: 100px; height: 100px;  color: #00498c;">Able</a></div>
         </nav>
     </div>
     <article class="main_page">
-        <h1>메인페이지</h1>
         <div class="main_club_list">
-            <h2 class="title"><p>동아리 홍보</p></h1>
-            <div><p>대한장애인체육회의 장애인 생활체육 동호회 정보를 제공하는 데이터입니다.</p></div>
-            <div id="club_list">
-                <dl>
-                    <dt>
-
-                    </dt>
-                </dl>
+            <h2 class="title" style="font-size: 25px;"><p>동호회 홍보</p></h1>
+            <div><p style="margin-bottom: 30px;">대한장애인체육회의 장애인 생활체육 동호회 정보를 제공하는 데이터입니다.</p></div>
+            <div class="club_list flex">
+                <div class="club club00">
+                    <div class="result-image">
+                        <img src="images/golf.png" style="width: 12em; height: 12em; position: relative; top: 1.5em;">
+                        <div class="img-cover">
+                            <p>골프</p>
+                        </div>
+                    </div>
+                    <div class="club_list_txt">
+                        <p class="title pt-2 mb-0">서초구 버디버디 골프동호인클럽</p>
+                        <p class="time">매주 화요일오전10시30분</p>
+                    </div>
+                </div>
+                <div class="club club01">
+                    <div class="result-image">
+                        <img src="images/fishing.png" style="width: 12em; height: 12em; position: relative; top: 1.5em;">
+                        <div class="img-cover">
+                            <p>낚시</p>
+                        </div>
+                    </div>
+                    <div class="club_list_txt">
+                        <p class="title pt-2 mb-0">장애인 낚시동아리 휠링피싱</p>
+                        <p class="time">연중 5회 낚시활동</p>
+                    </div>
+                </div>
+                <div class="club club02">
+                    <div class="result-image">
+                        <img src="images/goalball.png" style="width: 12em; height: 12em; position: relative; top: 1.5em;">
+                        <div class="img-cover">
+                            <p>골볼</p>
+                        </div>
+                    </div>
+                    <div class="club_list_txt">
+                        <p class="title pt-2 mb-0">2021년 아산스마트장애인골볼클럽</p>
+                        <p class="time">매주금 오전 10시30분~11시30분</p>
+                    </div>
+                </div>
+                <div class="club club03">
+                    <div class="result-image">
+                        <img src="images/kendo.png" style="width: 12em; height: 12em; position: relative; top: 1.5em;">
+                        <div class="img-cover">
+                            <p>검도</p>
+                        </div>
+                    </div>
+                    <div class="club_list_txt">
+                        <p class="title pt-2 mb-0">발달장애인 검도교실</p>
+                        <p class="time">매주 화, 수 오전11시</p>
+                    </div>
+                </div>
             </div>
         </div>
     </article>
@@ -89,7 +131,7 @@
     <!-- </article> -->
     <footer class="text-center text-lg-start abs_bt">
         <div class="text-center p-3" style="background-color: transparent;">
-            © 2021 Copyright: @_iammihee (Feedback welcome)
+            © 2021 Copyright: @_iammihee (Feedback is welcome)
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
