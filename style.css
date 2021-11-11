@@ -128,7 +128,7 @@ button:focus,button:active {
     float: left;
 }
 .box_more {
-    background-image: url("/images/plus.png");
+    background-image: url("./images/plus.png");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
