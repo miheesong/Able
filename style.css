@@ -22,6 +22,14 @@ a:active { text-decoration:none !important }
 .table td, .table th {
     padding: 0.9rem;
 }
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+button:focus,button:active {
+    border: 0;
+}
 .header {
     width: 100%;
     background-color: #fff;
@@ -45,7 +53,7 @@ a:active { text-decoration:none !important }
     line-height: 88px;
     padding-right: 30px;
 }
-.notice{
+.notice, .facility, .promotion{
     display: none;
 }
 .notice_img_box {
@@ -100,6 +108,7 @@ a:active { text-decoration:none !important }
     float: left;
     margin-right: 50px;
     background-color: #fff;
+    cursor: pointer;
 }
 .table_wrap {
     position: relative;
@@ -110,6 +119,22 @@ a:active { text-decoration:none !important }
     margin: 0 auto;
     padding: 100px 0;
 }
+.map{
+    float: left;
+    position: relative;
+    left: 15em;
+}
+.facility_list {
+    float: left;
+}
+.box_more {
+    background-image: url("/images/plus.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 150px;
+    cursor: pointer;
 /* body {
     background-color: #ccdce9;
 }

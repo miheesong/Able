@@ -30,14 +30,14 @@
                     <a href="javascript:void(0);" onclick="promotion();">동호회홍보</a>
                 </li>
                 <li class="main_menu info_tab">
-                    <a href="javascript:void(0);" onclick="info();">체육시설</a>
+                    <a href="javascript:void(0);" onclick="facility();">체육시설</a>
                 </li>
                 <li class="main_menu notice_tab">
                     <a href="javascript:void(0);" onclick="notice();">공지사항</a>
                 </li>
             </ul>
             <div class="main_logo"
-                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 35px; font-weight: bold;">
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; font-weight: bold;">
                 <a href="javascript:void(0);" onclick="window.location.reload();"
                     style="width: 100px; height: 100px;  color: #00498c;">Able</a>
             </div>
@@ -45,6 +45,7 @@
     </div>
     <article class="main_page">
         <div class="main_club_list">
+            <div class="club_more"><span class="box_more" onclick="more_club();"></span></div>
             <h2 class="title" style="font-size: 25px;">
                 <p>동호회 홍보</p>
             </h2>
@@ -53,7 +54,7 @@
             </div>
             <div class="club_list_wrap" style="position: relative; display: contents;">
                 <div class="club_list flex">
-                    <div class="club club00">
+                    <div class="club club00" onclick="more_club();">
                         <div class="result-image">
                             <img src="images/golf.png"
                                 style="width: 12em; height: 12em; position: relative; top: 1.5em;">
@@ -66,7 +67,7 @@
                             <p class="time">매주 화요일오전10시30분</p>
                         </div>
                     </div>
-                    <div class="club club01">
+                    <div class="club club01" onclick="more_club();">
                         <div class="result-image">
                             <img src="images/fishing.png"
                                 style="width: 12em; height: 12em; position: relative; top: 1.5em;">
@@ -79,7 +80,7 @@
                             <p class="time">연중 5회 낚시활동</p>
                         </div>
                     </div>
-                    <div class="club club02">
+                    <div class="club club02" onclick="more_club();">
                         <div class="result-image">
                             <img src="images/goalball.png"
                                 style="width: 12em; height: 12em; position: relative; top: 1.5em;">
@@ -92,7 +93,7 @@
                             <p class="time">매주금 오전 10시30분~11시30분</p>
                         </div>
                     </div>
-                    <div class="club club03">
+                    <div class="club club03" onclick="more_club();">
                         <div class="result-image">
                             <img src="images/kendo.png"
                                 style="width: 12em; height: 12em; position: relative; top: 1.5em;">
@@ -145,23 +146,23 @@
                         <tbody>
                             <tr>
                                 <th>1위</th>
-                                <td>탁구</td>
+                                <td>열정!</td>
                             </tr>
                             <tr>
                                 <th>2위</th>
-                                <td>테니스</td>
+                                <td>배트민턴 라켓 추천...</td>
                             </tr>
                             <tr>
                                 <th>3위</th>
-                                <td>농구</td>
+                                <td>토요일6시 풋살...</td>
                             </tr>
                             <tr>
                                 <th>4위</th>
-                                <td>배구</td>
+                                <td>평일 저녁 7시에 함께...</td>
                             </tr>
                             <tr>
                                 <th>5위</th>
-                                <td>요가</td>
+                                <td>함께 러닝할 크루원...</td>
                             </tr>
                         </tbody>
                     </table>
@@ -169,27 +170,27 @@
                 <div class="table-responsive" style="width: 350px; border: 3px solid #00498c;">
                     <table class="table text-center mb-0">
                         <p class="mb-0"
-                            style="text-align: center; padding: 25px 0; font-size: large; font-weight: bold;">인기종목</p>
+                            style="text-align: center; padding: 25px 0; font-size: large; font-weight: bold;">새로운게시글</p>
                         <tbody>
                             <tr>
-                                <th>1위</th>
-                                <td>탁구</td>
+                                <th>1</th>
+                                <td>탁구동호회 탁구동아리에 함께...</td>
                             </tr>
                             <tr>
-                                <th>2위</th>
-                                <td>테니스</td>
+                                <th>2</th>
+                                <td>매일 저녁마다 함께 테니스...</td>
                             </tr>
                             <tr>
-                                <th>3위</th>
-                                <td>농구</td>
+                                <th>3</th>
+                                <td>배구동아리에서 인원을...</td>
                             </tr>
                             <tr>
-                                <th>4위</th>
-                                <td>배구</td>
+                                <th>4</th>
+                                <td>수영하려고하는데 수영...</td>
                             </tr>
                             <tr>
-                                <th>5위</th>
-                                <td>요가</td>
+                                <th>5</th>
+                                <td>헬스클럽 오픈☆</td>
                             </tr>
                         </tbody>
                     </table>
@@ -197,45 +198,90 @@
             </div>
         </div>
     </article>
+    <article class="facility">
+        <h2 class="col-sm-6 mt-5" style="text-align: center; font-weight: bold;">체육시설 찾기</h2>
+        <div class="facility_wrapper mt-5 pb-5" style="display: -webkit-box;">
+            <div class="map col-sm-5">
+                <img src="./images/map.PNG">
+            </div>
+            <div class="facility_list col-sm-3" style="left: 15em;">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">목록</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li style="font-size: 1.5rem; font-weight: bold;">(주)꿈자라다</li>
+                            <li class="mt-1">경기도 성남시 분당구 야탑로 32삼부빌딜 4층(야탑동)</li>
+                            <li class="mt-1">☎ 0317191441</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
     <article class="notice">
         <div class="notice_img_box"><img src="./images/friend.png" style="top: 150px;"></div>
     </article>
-    <!-- <article class="question">
-        <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <span class="flower"><img src="images/flower.png" style="width: 1.5em; height: 1.5em;"></span><span id="question_num">1/12</span>
-        <h2 id="title" class="text-center mt-5">문제</h2>
-        <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn mt-5 option">Primary</button>
-        <button id="B" type="button" class="btn mt-5 option">Primary</button>
-    </article> -->
-    <!-- <article class="result"> 
-        <a class="music-url" href="http://kko.to/b0bTPsTfp">
-            <div class="result-image">
-                <div class="img-cover"></div>
+    <article class="promotion mb-5">
+        <h2 class="col-sm-6 mt-5" style="text-align: center; font-weight: bold;">홍보게시판</h2>
+        <div class="row justify-content-center mt-5">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap text-center">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Title</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Views</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5</td>
+                                    <td>서초구 버디버디 골프동호인클럽</td>
+                                    <td>홍길동</td>
+                                    <td>매주  금 17시~21시, 70분</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>장애인 낚시동아리 휠링피싱</td>
+                                    <td>홍길동</td>
+                                    <td>연중 5회 낚시활동</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2021년 아산스마트장애인골볼클럽</td>
+                                    <td>홍길동</td>
+                                    <td>매주 금 오전 10시 30분~11시 30분</td>
+                                    <td>115</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>발달장애인 검도교실</td>
+                                    <td>홍길동</td>
+                                    <td>매주 화, 수 오전11시</td>
+                                    <td>75</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2021 세하 인라인 클럽</td>
+                                    <td>홍길동</td>
+                                    <td>매주 금 13:30~15:30</td>
+                                    <td>55</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-        </a>
-        <span id="output">MBTI</span>
-        <span id="explain">설명</span> -->
-
-    <!-- <div class="image" src="https://cdnimg.melon.co.kr/cm/album/images/026/46/282/2646282_500.jpg/melon/resize/282/quality/80/optimize"></div></a> -->
-    <!-- <ul class="list">
-
-        </ul>
-        <button type="button" class="btn col-3 mt-3" onclick="window.location.reload()" style="border-color: #cb99c5; margin: 0 auto;">다시하기</button> -->
-    <!-- AddToAny BEGIN -->
-    <!-- <div class="a2a_kit a2a_kit_size_32 a2a_default_style margin_auto mt-3" data-a2a-url="https://iu-test.netlify.app/" data-a2a-title="iu-test">
-            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-            <a class="a2a_button_facebook"></a>
-            <a class="a2a_button_twitter"></a>
-            <a class="a2a_button_email"></a>
-            <a class="a2a_button_kakao"></a>
-            <a class="a2a_button_sms"></a>
         </div>
-        <script async src="https://static.addtoany.com/menu/page.js"></script> -->
-    <!-- AddToAny END -->
-    <!-- </article> -->
+    </article>
     <footer class="text-center text-lg-start abs_bt">
         <div class="text-center p-3" style="background-color: transparent;">
             © 2021 Copyright: @_iammihee (Feedback is welcome)
@@ -251,22 +297,29 @@
 
         function notice() {
             $(".main_page").hide();
+            $(".promotion").hide();
+            $(".facility").hide();
             $(".notice").show();
         }
-        function start() {
-            $(".start").hide();
-            $(".question").show();
-            next();
+        function facility() {
+            $(".main_page").hide();
+            $(".notice").hide();
+            $(".promotion").hide();
+            $(".facility").show();
         }
-        $("#A").click(function () {
-            next();
-        });
-        $("#B").click(function () {
-            var type = $("#type").val();
-            var preValue = $("#" + type).val();
-            $("#" + type).val(parseInt(preValue) + 1);
-            next();
-        });
+        function promotion() {
+            $(".main_page").hide();
+            $(".notice").hide();
+            $(".facility").hide();
+            $(".promotion").show();
+        }
+        function more_club() {
+            $(".main_page").hide();
+            $(".notice").hide();
+            $(".facility").hide();
+            $(".promotion").show();
+        }
+        
 
     </script>
 </body>
